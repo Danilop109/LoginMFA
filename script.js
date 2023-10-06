@@ -1,5 +1,4 @@
 
-
 let buttonLogin= document.getElementById("button-login");
 let buttomSignup= document.getElementById("buttom-sign-up");
 
