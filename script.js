@@ -86,12 +86,12 @@ async function LoginUsuario(e) {
     const data = await response.json();
 
     if (data.isAuthenticated === true) {
-        const refreshTokenExpirationDate = getCookieExpirationDate();
-        document.cookie = `accessToken=${data.token}; path=/; expires=${refreshTokenExpirationDate}`;
-        document.cookie = `refreshToken=${data.refreshToken}; path=/; expires=${refreshTokenExpirationDate}`;
-        document.cookie = `jobsTitle=${data.jobsTitle[0]}; path=/; expires=${refreshTokenExpirationDate}`;
-
-        window.location.href = "./view/welcome.html";
+      //CODIGO DE REFERENCIA PARA AUTENTICAION
+        // const refreshTokenExpirationDate = getCookieExpirationDate();
+        // document.cookie = `accessToken=${data.token}; path=/; expires=${refreshTokenExpirationDate}`;
+        // document.cookie = `refreshToken=${data.refreshToken}; path=/; expires=${refreshTokenExpirationDate}`;
+        
+        // window.location.href = "./view/welcome.html";
 
       
     } else {
